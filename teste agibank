@@ -1,0 +1,14 @@
+import pyautogui
+import time
+pyautogui.alert('Não utilize a máquina até a automação finalizar, Clique em OK para continuar.')
+time.sleep(1)
+from selenium import webdriver
+driver= webdriver.Chrome(executable_path=r'./chromedriver.exe')
+navegador = webdriver.Chrome()
+navegador.get("https://blogdoagi.com.br/")
+time.sleep(2)
+navegador.find_element_by_xpath('/html/body/header/div[1]/button').click()
+time.sleep(2)
+navegador.find_element_by_xpath('/html/body/header/div[1]/div[2]/form/label/input').send_keys("Futuro")
+time.sleep(1)
+pyautogui.alert('Automação Finalizada')
