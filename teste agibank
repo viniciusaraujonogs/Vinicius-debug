@@ -12,3 +12,4 @@ time.sleep(2)
 navegador.find_element_by_xpath('/html/body/header/div[1]/div[2]/form/label/input').send_keys("Futuro")
 time.sleep(1)
 pyautogui.alert('Automação Finalizada')
+Alteração de código
